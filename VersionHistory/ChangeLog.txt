@@ -3,7 +3,9 @@
 - Added multiple display block challenge formats
 - Refactoring to promote extensibility
 - Added Error protection
+- Added B4K icon
 
 -----------------------Version 1.0-----------------------
 - Prototype including one challenge format per Sound, Power, Direction, and Light blocks 
 - Three levels of challenge difficulty
+- Basic UI

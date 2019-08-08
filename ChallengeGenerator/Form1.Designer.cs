@@ -118,6 +118,7 @@
             this.Controls.Add(this.lblChallenge3);
             this.Controls.Add(this.lblChallenge2);
             this.Controls.Add(this.lblChallenge1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "B4K Challenge Generator V1.01";
             this.Load += new System.EventHandler(this.Form1_Load);
