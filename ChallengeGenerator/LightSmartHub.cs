@@ -5,17 +5,28 @@ using System.Text;
 
 namespace ChallengeGenerator
 {
+    /*
+     * class LightSmartHub
+     * Contains all methods relevant for Light Block related challenge segment generation
+     */
     public class LightSmartHub : Block
     {
+        /*
+         * Constructor to initialize the name
+         */
         public LightSmartHub()
         {
             Name = "Colour";
         }
-        public override string generateLine()
+
+        /*
+         * Overriden generateSegment function to generate a light related challenge segment
+         * @return string - generated segment
+         */
+        public override string generateSegment()
         {
             string toReturn = "change the colour on the Smart-Hub to ";
             int num = randomNumber(1, 12);
-            System.Threading.Thread.Sleep(20);
             //Possible colours: pink, purple, blue, sky blue, teal, green, yellow, orange, red, and white.
             switch (num)
             {
@@ -54,7 +65,6 @@ namespace ChallengeGenerator
                     break;
             }
             return toReturn;
-            //throw new NotImplementedException();
         }
     }
 }

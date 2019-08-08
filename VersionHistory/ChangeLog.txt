@@ -1,0 +1,9 @@
+-----------------------Version 1.01----------------------
+- Performance Optimization
+- Added multiple display block challenge formats
+- Refactoring to promote extensibility
+- Added Error protection
+
+-----------------------Version 1.0-----------------------
+- Prototype including one challenge format per Sound, Power, Direction, and Light blocks 
+- Three levels of challenge difficulty

@@ -54,7 +54,7 @@
             // 
             this.lblChallenge2.AutoSize = true;
             this.lblChallenge2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.lblChallenge2.Location = new System.Drawing.Point(12, 280);
+            this.lblChallenge2.Location = new System.Drawing.Point(12, 285);
             this.lblChallenge2.MaximumSize = new System.Drawing.Size(1250, 1000);
             this.lblChallenge2.Name = "lblChallenge2";
             this.lblChallenge2.Size = new System.Drawing.Size(243, 46);
@@ -65,7 +65,7 @@
             // 
             this.lblChallenge3.AutoSize = true;
             this.lblChallenge3.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.lblChallenge3.Location = new System.Drawing.Point(12, 438);
+            this.lblChallenge3.Location = new System.Drawing.Point(12, 439);
             this.lblChallenge3.MaximumSize = new System.Drawing.Size(1250, 1000);
             this.lblChallenge3.Name = "lblChallenge3";
             this.lblChallenge3.Size = new System.Drawing.Size(254, 46);
@@ -84,20 +84,24 @@
             // 
             // btnGenerate
             // 
-            this.btnGenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btnGenerate.Location = new System.Drawing.Point(20, 12);
+            this.btnGenerate.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnGenerate.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnGenerate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGenerate.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerate.Location = new System.Drawing.Point(1101, 12);
             this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Size = new System.Drawing.Size(133, 81);
+            this.btnGenerate.Size = new System.Drawing.Size(137, 81);
             this.btnGenerate.TabIndex = 0;
             this.btnGenerate.Text = "Generate Challenges!";
-            this.btnGenerate.UseVisualStyleBackColor = true;
+            this.btnGenerate.UseVisualStyleBackColor = false;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(940, 1);
+            this.pictureBox2.Location = new System.Drawing.Point(940, 580);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(326, 103);
             this.pictureBox2.TabIndex = 7;
@@ -115,7 +119,7 @@
             this.Controls.Add(this.lblChallenge2);
             this.Controls.Add(this.lblChallenge1);
             this.Name = "Form1";
-            this.Text = "B4K Challenge Generator";
+            this.Text = "B4K Challenge Generator V1.01";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

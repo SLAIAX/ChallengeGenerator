@@ -12,7 +12,7 @@ namespace ChallengeGenerator
             Name = "Sound";
         }
 
-        public override string generateLine()
+        public override string generateSegment()
         {
             string toReturn;
             int num = randomNumber(0, 30);

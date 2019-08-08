@@ -18,3 +18,13 @@ C:\Users\1burg\Desktop\ChallengeGenerator\ChallengeGenerator\obj\Debug\Challenge
 C:\Users\1burg\Desktop\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.csproj.CoreCompileInputs.cache
 C:\Users\1burg\Desktop\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.exe
 C:\Users\1burg\Desktop\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.pdb
+G:\ChallengeGenerator\ChallengeGenerator\bin\Debug\ChallengeGenerator.exe.config
+G:\ChallengeGenerator\ChallengeGenerator\bin\Debug\ChallengeGenerator.exe
+G:\ChallengeGenerator\ChallengeGenerator\bin\Debug\ChallengeGenerator.pdb
+G:\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.csprojResolveAssemblyReference.cache
+G:\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.Form1.resources
+G:\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.Properties.Resources.resources
+G:\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.csproj.GenerateResource.cache
+G:\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.csproj.CoreCompileInputs.cache
+G:\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.exe
+G:\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.pdb

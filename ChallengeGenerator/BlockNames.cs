@@ -10,6 +10,7 @@ namespace ChallengeGenerator
         SpinMotor = 1,
         PowerMotor = 2,
         LightSmartHub = 3,
-        SoundsBlock
+        SoundsBlock = 4,
+        DisplayBlock = 5
     }
 }
