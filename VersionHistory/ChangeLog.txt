@@ -5,7 +5,12 @@
 - Added Error protection
 - Added B4K icon
 
+Future adjustments:
+- Update GUI
+- Resizable window content (currently stuck at 1280x720)
+- Level 2 challenges (For sensors)
+
 -----------------------Version 1.0-----------------------
 - Prototype including one challenge format per Sound, Power, Direction, and Light blocks 
 - Three levels of challenge difficulty
-- Basic UI
+- Basic GUI
