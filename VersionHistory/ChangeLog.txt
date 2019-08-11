@@ -1,3 +1,13 @@
+-----------------------Version 1.02----------------------
+- Added basis for Level 2 (sensor) challenges
+- Implemented tilt sensor challenges
+
+Future adjustments:
+- Requires refactoring
+- Adding remaining sensor challenges
+- Update GUI
+- Resizable window content (currently stuck at 1280x720)
+
 -----------------------Version 1.01----------------------
 - Performance Optimization
 - Added multiple display block challenge formats

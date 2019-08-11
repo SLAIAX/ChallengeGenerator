@@ -56,5 +56,12 @@
       <FileName>BlockNames.cs</FileName>
     </TypeIdentifier>
   </Enum>
+  <Enum Name="ChallengeGenerator.SensorNames">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAABABAAAAAAAAAA=</HashCode>
+      <FileName>SensorNames.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

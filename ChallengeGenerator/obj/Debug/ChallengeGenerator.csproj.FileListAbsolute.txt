@@ -28,3 +28,13 @@ G:\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.csproj.Gen
 G:\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.csproj.CoreCompileInputs.cache
 G:\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.exe
 G:\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.pdb
+C:\Users\Jordan\Desktop\ChallengeGenerator\ChallengeGenerator\bin\Debug\ChallengeGenerator.exe.config
+C:\Users\Jordan\Desktop\ChallengeGenerator\ChallengeGenerator\bin\Debug\ChallengeGenerator.exe
+C:\Users\Jordan\Desktop\ChallengeGenerator\ChallengeGenerator\bin\Debug\ChallengeGenerator.pdb
+C:\Users\Jordan\Desktop\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.csprojAssemblyReference.cache
+C:\Users\Jordan\Desktop\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.Form1.resources
+C:\Users\Jordan\Desktop\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.Properties.Resources.resources
+C:\Users\Jordan\Desktop\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.csproj.GenerateResource.cache
+C:\Users\Jordan\Desktop\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Jordan\Desktop\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.exe
+C:\Users\Jordan\Desktop\ChallengeGenerator\ChallengeGenerator\obj\Debug\ChallengeGenerator.pdb

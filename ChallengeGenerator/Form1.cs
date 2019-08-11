@@ -18,7 +18,7 @@ namespace ChallengeGenerator
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            cmbLevel.SelectedItem = "Level 1";
         }
 
         /*
@@ -61,9 +61,16 @@ namespace ChallengeGenerator
         {
             try
             {
-                lblChallenge1.Text = "Challenge 1: " + generateEasyChallenge();
-                lblChallenge2.Text = "Challenge 2: " + generateMediumChallenge();
-                lblChallenge3.Text = "Challenge 3: " + generateHardChallenge();
+                if (cmbLevel.SelectedItem == "Level 1")
+                {
+                    lblChallenge1.Text = "Challenge 1: " + generateEasyChallenge();
+                    lblChallenge2.Text = "Challenge 2: " + generateMediumChallenge();
+                    lblChallenge3.Text = "Challenge 3: " + generateHardChallenge();
+                }
+                else
+                {
+                    generateSensorChallenges();
+                }
             }
             catch (Exception ex)
             {
@@ -166,6 +173,38 @@ namespace ChallengeGenerator
                 }
             }
             return toReturn;
+        }
+
+        public void generateSensorChallenges()
+        {
+            SensorNames _sensor = SensorNames.Motion;
+            Block obj;
+            int num;
+            switch (_sensor)
+            {
+                case SensorNames.Motion:
+                    obj = chooseBlock();
+                    lblChallenge1.Text = "Challenge 1: When the model is tilted forward, " + obj.generateSegment() + ".";
+
+                    obj = chooseBlock();
+                    lblChallenge2.Text = "Challenge 2: When the model is tilted backward, " + obj.generateSegment() + ".";
+
+                    num = Block.randomNumber(1, 3);
+                    obj = chooseBlock();
+                    if (num == 1)
+                    {
+                        lblChallenge3.Text = "Challenge 3: When the model is tilted left, " + obj.generateSegment() + ".";
+                    } else
+                    {
+                        lblChallenge3.Text = "Challenge 4: When the model is tilted right, " + obj.generateSegment() + ".";
+                    }
+                    break;
+                case SensorNames.Distance:
+                    break;
+                case SensorNames.Sound:
+                    break;
+            }
+            
         }
     }
 }
