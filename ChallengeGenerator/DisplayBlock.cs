@@ -45,8 +45,8 @@ namespace ChallengeGenerator
          */
         public void timedPic(ref string toReturn)
         {
-            int num = randomNumber(1, 31);          //Choose a picture
-            if (num == 30)                          //If 30, ask for a random picture
+            int num = randomNumber(1, 30);          //Choose a picture
+            if (num == 29)                          //If 30, ask for a random picture
             {
                 toReturn = "display a random picture for ";
             } else
