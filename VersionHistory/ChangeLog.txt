@@ -1,12 +1,15 @@
 -----------------------Version 1.02----------------------
 - Added basis for Level 2 (sensor) challenges
-- Implemented tilt sensor challenges
+- Implemented tilt, motion and sound sensor challenges
+- Temporary drop-down menu to swap between Levels
 
 Future adjustments:
 - Requires refactoring
-- Adding remaining sensor challenges
 - Update GUI
 - Resizable window content (currently stuck at 1280x720)
+- Resizeable text
+- Potentially create a seperate form/screen to adjust all settings
+- Weekly challenges, Level 1 and 2
 
 -----------------------Version 1.01----------------------
 - Performance Optimization
