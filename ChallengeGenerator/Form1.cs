@@ -72,7 +72,7 @@ namespace ChallengeGenerator
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message  + Environment.NewLine + Environment.NewLine + "If this error persists, please contact Jordan with the details.");
+                MessageBox.Show(ex.Message + Environment.NewLine + Environment.NewLine + "If this error persists, please contact Jordan with the details.");
             }
         }
 
@@ -151,7 +151,7 @@ namespace ChallengeGenerator
         {
             string toReturn = "";
             int num = Block.randomNumber(1, 6);                             //Generate a number between 0 and 6
-            if(num == 5)                                                    //If it's a 5, repeat the code segment
+            if (num == 5)                                                    //If it's a 5, repeat the code segment
             {
                 num = Block.randomNumber(2, 6);                             //Generate a new random number to specify how many times to repeat it
                 toReturn = " Repeat this ";
@@ -173,7 +173,7 @@ namespace ChallengeGenerator
         public void generateLevelTwoChallenges()
         {
 
-            SensorNames _sensor = (SensorNames)Block.randomNumber(1,4);
+            SensorNames _sensor = (SensorNames)Block.randomNumber(1, 4);
             Block obj;
             int num;
             switch (_sensor)
@@ -189,7 +189,8 @@ namespace ChallengeGenerator
                     if (num == 1)
                     {
                         lblChallenge3.Text = "Challenge 3: When the model is tilted left, " + generateHardChallenge();
-                    } else
+                    }
+                    else
                     {
                         lblChallenge3.Text = "Challenge 3: When the model is tilted right, " + generateHardChallenge();
                     }
@@ -230,7 +231,7 @@ namespace ChallengeGenerator
                     lblChallenge3.Text = "Challenge 3: When the volume is " + vol3 + ", " + generateHardChallenge();
                     break;
             }
-            
+
         }
 
         /*
@@ -248,8 +249,17 @@ namespace ChallengeGenerator
             lblChallenge2.Text = challenge + generateMediumChallenge();
 
             obj = new StartBlock();
-            challenge =  "Challenge 3: " + obj.generateSegment();
+            challenge = "Challenge 3: " + obj.generateSegment();
             lblChallenge3.Text = challenge + generateHardChallenge();
+        }
+
+        /*
+         * Function is called whenever the text in the corresponding textbox is changed.
+         * It will adjust the font-size of all challenge labels accordingly
+         */
+        private void tbxFontSize_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

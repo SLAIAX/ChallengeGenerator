@@ -1,3 +1,21 @@
+-----------------------Version 1.03----------------------
+- Updated GUI layout
+- Added a non-functioning font changer
+- Added temporary logo in the top right
+- Made the window resizable
+- Made the window scrollable
+
+Future adjustments:
+- Requires refactoring
+- Update GUI
+- Resizeable text functionality
+- Potentially create a seperate form/screen to adjust all settings
+- Weekly challenges, Level 1 and 2 (drop down to select the week, then select the level and click generate)
+- Need to replace top-right logo with one that is the correct size
+- Need to adjust header image such that it fits within the panel correctly
+- Implement a conjunction function so that when a challenge is generated, it could be 'while' or 'and then'
+- Add more challenge formats
+
 -----------------------Version 1.02----------------------
 - Added basis for Level 2 (sensor) challenges
 - Implemented tilt, motion and sound sensor challenges
