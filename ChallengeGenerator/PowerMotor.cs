@@ -29,7 +29,7 @@ namespace ChallengeGenerator
             int num = randomNumber(1, 12);
             if(num == 11)                               // If the generated number is 11, ask for a random power
             {
-                toReturn += "a random number ";
+                toReturn += "a random number";
             } else
             {
                 toReturn += num;                        // Specify a value between 1 and 10
