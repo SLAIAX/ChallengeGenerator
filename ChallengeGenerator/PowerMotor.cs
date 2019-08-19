@@ -14,7 +14,7 @@ namespace ChallengeGenerator
         /*
          * Constructor to initialize name
          */
-        public PowerMotor()
+        public PowerMotor() : base()
         {
             Name = "Power";
         }

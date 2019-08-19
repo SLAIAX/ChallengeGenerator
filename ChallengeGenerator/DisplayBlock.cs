@@ -14,7 +14,7 @@ namespace ChallengeGenerator
         /*
          * Constructor to initialize name
          */
-        public DisplayBlock()
+        public DisplayBlock() : base()
         {
             Name = "Display";
         }
@@ -67,6 +67,7 @@ namespace ChallengeGenerator
             toReturn = "create a display that counts from " + num + " to ";
             num = randomNumber((num + 5), 31);      //Choose final number
             toReturn += num;
+            zLooped = true;
         }
     }
 }

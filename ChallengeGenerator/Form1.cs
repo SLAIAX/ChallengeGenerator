@@ -12,6 +12,8 @@ namespace ChallengeGenerator
 {
     public partial class Form1 : Form
     {
+        private bool looped = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +21,10 @@ namespace ChallengeGenerator
         private void Form1_Load(object sender, EventArgs e)
         {
             cmbLevel.SelectedItem = "Level 1";
+            looped = false;
         }
+
+        
 
         /*
          * Function to randomly choose an action block out of all possible action blocks
@@ -83,9 +88,11 @@ namespace ChallengeGenerator
          */
         private string generateEasyChallenge()
         {
+            looped = false;
             string challenge;
             Block obj = chooseBlock();
             challenge = obj.generateSegment();
+            looped = obj.Looped;
 
             challenge += "." + repeat();
             return challenge;
@@ -98,9 +105,11 @@ namespace ChallengeGenerator
          */
         private string generateMediumChallenge()
         {
+            looped = false;
             string challenge;
             Block obj = chooseBlock();
             challenge = obj.generateSegment();
+            looped = obj.Looped;
 
             Block objNew;
             do
@@ -108,7 +117,15 @@ namespace ChallengeGenerator
                 objNew = chooseBlock();
             } while (obj.Name == objNew.Name);
 
-            challenge += " and then " + objNew.generateSegment() + "." + repeat();
+            challenge += " and then " + objNew.generateSegment();
+
+            if (!looped)
+            {
+                looped = objNew.Looped;
+            }
+            
+                
+            challenge += "." + repeat();
 
             return challenge;
         }
@@ -120,9 +137,11 @@ namespace ChallengeGenerator
          */
         private string generateHardChallenge()
         {
+            looped = false;
             string challenge;
             Block obj = chooseBlock();
             challenge = obj.generateSegment();
+            looped = obj.Looped;
 
             Block objNew;
             do
@@ -132,12 +151,23 @@ namespace ChallengeGenerator
 
             challenge += " and then " + objNew.generateSegment();
 
+            if(!looped)
+            {
+                looped = objNew.Looped;
+            }
+
             do
             {
                 obj = chooseBlock();
             } while (obj.Name == objNew.Name);
 
-            challenge += " and finally " + obj.generateSegment() + "." + repeat();
+            challenge += " and finally " + obj.generateSegment();
+            if (!looped)
+            {
+                looped = obj.Looped;
+            }
+
+            challenge += "." + repeat();
 
             return challenge;
         }
@@ -150,18 +180,21 @@ namespace ChallengeGenerator
         private string repeat()
         {
             string toReturn = "";
-            int num = Block.randomNumber(1, 6);                             //Generate a number between 0 and 6
-            if (num == 5)                                                    //If it's a 5, repeat the code segment
+            if (looped == false)
             {
-                num = Block.randomNumber(2, 6);                             //Generate a new random number to specify how many times to repeat it
-                toReturn = " Repeat this ";
-                if (num == 5)                                               //If it's a 5 generated, it will be repeated an infinite amount of times
+                int num = Block.randomNumber(1, 6);                             //Generate a number between 0 and 6
+                if (num == 5)                                                   //If it's a 5, repeat the code segment
                 {
-                    toReturn += "an infinite amount of times.";
-                }
-                else                                                        //Else it will repeat the number of times according to the generated number
-                {
-                    toReturn += num + " times using the loop block.";
+                    num = Block.randomNumber(2, 6);                             //Generate a new random number to specify how many times to repeat it
+                    toReturn = " Repeat this ";
+                    if (num == 5)                                               //If it's a 5 generated, it will be repeated an infinite amount of times
+                    {
+                        toReturn += "an infinite amount of times.";
+                    }
+                    else                                                        //Else it will repeat the number of times according to the generated number
+                    {
+                        toReturn += num + " times using the loop block.";
+                    }
                 }
             }
             return toReturn;

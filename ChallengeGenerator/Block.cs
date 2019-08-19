@@ -13,6 +13,12 @@ namespace ChallengeGenerator
         private string zName;                               //< The name of the block
         private static Random _random = new Random();       //< The Static random object used to only seed once. 
         private static int _totalBlocks = 5;                //< The total number of action blocks
+        protected bool zLooped = false;                      //< Whether the generated code includes a loop or not
+
+        public Block()
+        {
+            zLooped = false;
+        }
 
         /*
          * Accessor for the Blocks names
@@ -32,6 +38,15 @@ namespace ChallengeGenerator
         public static int TotalBlocks
         {
             get => _totalBlocks;
+        }
+
+        public bool Looped
+        {
+            get => zLooped;
+            set
+            {
+                zLooped = value;
+            }
         }
 
         /*

@@ -7,7 +7,7 @@ namespace ChallengeGenerator
 {
     public class SoundsBlock : Block
     {
-        public SoundsBlock()
+        public SoundsBlock() : base()
         {
             Name = "Sound";
         }

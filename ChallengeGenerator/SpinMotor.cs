@@ -14,7 +14,7 @@ namespace ChallengeGenerator
         /*
          * Constructor to initialize name
          */
-        public SpinMotor()
+        public SpinMotor() : base()
         {
             Name = "Spin";
         }

@@ -14,7 +14,7 @@ namespace ChallengeGenerator
         /*
          * Constructor to initialize the name
          */
-        public LightSmartHub()
+        public LightSmartHub() : base()
         {
             Name = "Colour";
         }
@@ -31,34 +31,34 @@ namespace ChallengeGenerator
             switch (num)
             {
                 case 1:
-                    toReturn += "pink";
+                    toReturn += "colour number 1";
                     break;
                 case 2:
-                    toReturn += "purple";
+                    toReturn += "colour number 2";
                     break;
                 case 3:
-                    toReturn += "blue";
+                    toReturn += "colour number 3";
                     break;
                 case 4:
-                    toReturn += "blue";
+                    toReturn += "colour number 4";
                     break;
                 case 5:
-                    toReturn += "sky blue";
+                    toReturn += "colour number 5";
                     break;
                 case 6:
-                    toReturn += "teal";
+                    toReturn += "colour number 6";
                     break;
                 case 7:
-                    toReturn += "green";
+                    toReturn += "colour number 7";
                     break;
                 case 8:
-                    toReturn += "yellow";
+                    toReturn += "colour number 8";
                     break;
                 case 9:
-                    toReturn += "orange";
+                    toReturn += "colour number 9";
                     break;
                 case 10:
-                    toReturn += "red";
+                    toReturn += "colour number 10";
                     break;
                 case 11:
                     toReturn += "a random colour";
