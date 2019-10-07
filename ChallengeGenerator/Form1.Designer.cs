@@ -33,17 +33,16 @@
             this.lblChallenge2 = new System.Windows.Forms.Label();
             this.lblChallenge3 = new System.Windows.Forms.Label();
             this.btnGenerate = new System.Windows.Forms.Button();
-            this.cmbLevel = new System.Windows.Forms.ComboBox();
             this.contentPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contentPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblChallenge1
@@ -89,25 +88,13 @@
             this.btnGenerate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGenerate.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerate.Location = new System.Drawing.Point(3, 190);
+            this.btnGenerate.Location = new System.Drawing.Point(3, 163);
             this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Size = new System.Drawing.Size(188, 145);
+            this.btnGenerate.Size = new System.Drawing.Size(188, 172);
             this.btnGenerate.TabIndex = 0;
             this.btnGenerate.Text = "Generate Challenges!";
             this.btnGenerate.UseVisualStyleBackColor = false;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
-            // 
-            // cmbLevel
-            // 
-            this.cmbLevel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cmbLevel.FormattingEnabled = true;
-            this.cmbLevel.Items.AddRange(new object[] {
-            "Level 1",
-            "Level 2 (Sensors)"});
-            this.cmbLevel.Location = new System.Drawing.Point(3, 163);
-            this.cmbLevel.Name = "cmbLevel";
-            this.cmbLevel.Size = new System.Drawing.Size(188, 21);
-            this.cmbLevel.TabIndex = 8;
             // 
             // contentPanel
             // 
@@ -132,6 +119,18 @@
             this.contentPanel.Size = new System.Drawing.Size(1058, 338);
             this.contentPanel.TabIndex = 9;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1050, 154);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.AutoSize = true;
@@ -153,7 +152,6 @@
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.cmbLevel, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.btnGenerate, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.pictureBox2, 0, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(1067, 3);
@@ -177,18 +175,6 @@
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1050, 154);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,11 +189,11 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contentPanel.ResumeLayout(false);
             this.contentPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,7 +204,6 @@
         private System.Windows.Forms.Label lblChallenge2;
         private System.Windows.Forms.Label lblChallenge3;
         private System.Windows.Forms.Button btnGenerate;
-        private System.Windows.Forms.ComboBox cmbLevel;
         private System.Windows.Forms.TableLayoutPanel contentPanel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;

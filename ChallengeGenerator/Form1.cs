@@ -20,7 +20,6 @@ namespace ChallengeGenerator
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            cmbLevel.SelectedItem = "Level 1";
             looped = false;
         }
 
@@ -66,14 +65,7 @@ namespace ChallengeGenerator
         {
             try
             {
-                if (cmbLevel.SelectedItem == "Level 1")
-                {
-                    generateLevelOneChallenges();
-                }
-                else
-                {
-                    generateLevelTwoChallenges();
-                }
+                generateLevelOneChallenges();
             }
             catch (Exception ex)
             {
